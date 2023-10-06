@@ -6,7 +6,6 @@
 int main(void)
 {
 	char lowerLetter = 'a';
-	char upperLetter = 'A';
 
 	while (lowerLetter <= 'z')
 	{
