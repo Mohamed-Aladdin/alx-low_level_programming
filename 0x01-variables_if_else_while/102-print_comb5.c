@@ -15,12 +15,10 @@ int main(void)
 		{
 			int k = j + 1;
 
-			putchar('0' + i);
-			putchar('0' + j);
-			putchar(' ');
-
 			while (k <= 9)
 			{
+				putchar('0' + i);
+				putchar('0' + j);
 				putchar('0' + i);
 				putchar('0' + k);
 
