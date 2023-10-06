@@ -24,7 +24,7 @@ int main(void)
 			putchar('0' + x);
 			putchar('0' + y);
 
-			if (num1 == 98 && num2 == 99)
+			if (i == 98 && j == 99)
 				break;
 
 			putchar(',');
