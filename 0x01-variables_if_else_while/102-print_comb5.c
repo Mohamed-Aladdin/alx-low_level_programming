@@ -23,6 +23,10 @@ int main(void)
 			putchar(' ');
 			putchar('0' + x);
 			putchar('0' + y);
+
+			if (num1 == 98 && num2 == 99)
+				break;
+
 			putchar(',');
 			putchar(' ');
 			j++;
