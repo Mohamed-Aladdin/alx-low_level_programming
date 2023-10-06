@@ -13,11 +13,11 @@ int main(void)
 
 		while (j <= 9)
 		{
+			int k = j + 1;
+
 			putchar('0' + i);
 			putchar('0' + j);
 			putchar(' ');
-
-			int k = j + 1;
 
 			while (k <= 9)
 			{
