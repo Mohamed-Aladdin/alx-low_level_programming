@@ -7,10 +7,10 @@ int main(void)
 {
 	char lowerLetter = 'a';
 	char upperLetter = 'A';
-	while (lowLetter <= 'z')
+	while (lowerLetter <= 'z')
 	{
-		putchar(lowLetter);
-		lowLetter++;
+		putchar(lowerLetter);
+		lowerLetter++;
 	}
 
 	while (upperLetter <= 'Z')
