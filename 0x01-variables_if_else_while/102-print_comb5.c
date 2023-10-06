@@ -11,23 +11,30 @@ int main(void)
 	{
 		int j = i;
 
-		while (j <= 9)
+		while (j <= 8)
 		{
-			int k = j + 1;
+			int k = i;
 
 			while (k <= 9)
 			{
-				putchar('0' + i);
-				putchar('0' + j);
-				putchar(' ');
-				putchar('0' + i);
-				putchar('0' + k);
+				int m = j + 1;
 
-				if (i == 9 && j == 8)
-					break;
+				while (m <= 9)
+				{
+					putchar('0' + i);
+					putchar('0' + j);
+					putchar(' ');
+					putchar('0' + i);
+					putchar('0' + k);
 
-				putchar(',');
-				putchar(' ');
+					if (i == 9 && j == 8)
+						break;
+
+					putchar(',');
+					putchar(' ');
+					m++;
+				}
+
 				k++;
 			}
 
