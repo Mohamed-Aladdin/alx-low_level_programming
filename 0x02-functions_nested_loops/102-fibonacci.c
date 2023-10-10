@@ -17,7 +17,9 @@ int main(void)
 			printf("%lu\n", sum);
 		else
 			printf("%lu, ", sum);
-		sum += n2;
+		n1 = n2;
+		n2 = sum;
+		sum = n1 + n2;
 		i++;
 	}
 
