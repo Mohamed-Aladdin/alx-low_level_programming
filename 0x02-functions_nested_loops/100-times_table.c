@@ -35,7 +35,9 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
+
+				if ((x * (y + 1)) < 100)
+					_putchar(' ');
 				if ((x * (y + 1)) < 10)
 					_putchar(' ');
 			}
