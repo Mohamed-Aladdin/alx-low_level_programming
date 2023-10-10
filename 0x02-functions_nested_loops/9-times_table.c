@@ -19,24 +19,20 @@ void times_table(void)
 			int z = x * y;
 
 			if (z > 9)
-				_putchar('0' + (z / 10));	
+				_putchar('0' + (z / 10));
 			_putchar('0' + (z % 10));
 
 			if (y != 9)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if (z < 10)
-					_putchar(' ');
 			}
-			else
-			{
-				_putchar('\n');
-			}
-
+			if (z < 10)
+				_putchar(' ');
 			y++;
 		}
 
+		_putchar('\n');
 		x++;
 	}
 }
