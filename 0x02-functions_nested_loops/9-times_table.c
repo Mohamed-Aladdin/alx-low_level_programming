@@ -25,11 +25,11 @@ void times_table(void)
 			if (y != 9)
 			{
 				_putchar(',');
-				_putchar(32);
+				_putchar(' ');
 			}
 
-			if (z < 10)
-				_putchar(32);
+			if ((x * (y + 1)) < 10)
+				_putchar(' ');
 			y++;
 		}
 
