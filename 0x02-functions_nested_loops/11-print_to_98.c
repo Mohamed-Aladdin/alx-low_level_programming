@@ -19,12 +19,11 @@ void print_to_98(int n)
 			if (n == 98)
 				break;
 
-			_putchar(',');
-			_putchar(' ');
+			printf(", ");
 			n++;
 		}
 
-		_putchar('\n');
+		printf("\n");
 	}
 	else
 	{
@@ -35,11 +34,10 @@ void print_to_98(int n)
 			if (n == 98)
 				break;
 
-			_putchar(',');
-			_putchar(' ');
+			printf(", ");
 			n--;
 		}
 
-		_putchar('\n');
+		printf("\n");
 	}
 }
