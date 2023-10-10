@@ -1,13 +1,19 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * add - adds two integers and returns the result.
- * @n1: The first parameter or number given.
- * @n2: The second parameter or number given.
- * Return: The result of the addition of n1 and n2.
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
-
-int add(int n1, int n2)
+int main(void)
 {
-	return (n1 + n2);
+	int i = 0;
+	int sum = 0;
+
+	while (i < 1024)
+	{
+		if ((i % 3 == 0) || (i % 5) == 0)
+			sum += i;
+	}
+
+	printf("%d\n", sum);
+	return (0);
 }
