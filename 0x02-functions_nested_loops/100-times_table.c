@@ -3,6 +3,7 @@
 /**
  * print_times_table - prints the 9 times table,
  * starting with 0.
+ * @n: The parameter or number given.
  * Return: void.
  */
 
@@ -10,11 +11,11 @@ void print_times_table(int n)
 {
 	int x = 0;
 
-	while (x < n)
+	while (x <= n)
 	{
 		int y = 0;
 
-		while (y < n)
+		while (y <= n)
 		{
 			int z = x * y;
 
