@@ -17,6 +17,7 @@ void times_table(void)
 		while (y < 10)
 		{
 			int z = x * y;
+
 			_putchar('0' + z);
 
 			if (y != 9)
