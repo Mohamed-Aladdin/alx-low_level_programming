@@ -32,7 +32,6 @@ void print_times_table(int n)
 						_putchar('0' + (z / 10));
 				}
 				_putchar('0' + (z % 10));
-
 				if (y != n)
 				{
 					_putchar(',');
@@ -46,7 +45,6 @@ void print_times_table(int n)
 
 				y++;
 			}
-
 			_putchar('\n');
 			x++;
 		}
