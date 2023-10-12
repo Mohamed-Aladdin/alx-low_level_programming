@@ -2,6 +2,7 @@
 /**
  * print_number - prints an integer.
  * @n: The number to be printed.
+ *
  * Return: void.
  */
 
@@ -17,4 +18,5 @@ void print_number(int n)
 		print_number(n / 10);
 
 	_putchar('0' + (n % 10));
+	_putchar('\n');
 }
