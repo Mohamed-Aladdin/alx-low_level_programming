@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
  * main - Entry point.
- *
  * Return: 0 always.
  */
 
@@ -23,6 +22,8 @@ int main(void)
 			printf(" %d", i);
 		i++;
 	}
+
 	printf("\n");
+
 	return (0);
 }
