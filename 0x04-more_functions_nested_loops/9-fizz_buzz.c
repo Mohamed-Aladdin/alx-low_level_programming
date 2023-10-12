@@ -8,7 +8,7 @@ int main(void)
 {
 	int i = 2;
 
-	printf("1");
+	printf("%d", 1);
 
 	while (i <= 100)
 	{
@@ -20,6 +20,7 @@ int main(void)
 			printf(" FizzBuzz");
 		else
 			printf(" %d", i);
+		i++;
 	}
 	printf("\n");
 }
