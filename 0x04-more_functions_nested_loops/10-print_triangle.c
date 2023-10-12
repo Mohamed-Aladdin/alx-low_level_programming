@@ -1,20 +1,23 @@
 #include "main.h"
 /**
- * print_square - prints a square, followed by a new line. 
- * @size: The size of the square.
+ * print_triangle - prints a triangle, followed by a new line. 
+ * @size: The size of the triangle.
  * 
  * Return: void.
  */
 
-void print_square(int size)
+void print_triangle(int size)
 {
-	int i = 1, j = 0;
+	int i = 1, j = 1;
 
-	while (i <= n)
+	while (i <= size)
 	{
-		while (j < size)
+		while (j <= size)
 		{
-			_putchar('#');
+			if (j == i)
+				_putchar('#');
+			else
+				_putchar(' ');
 			j++;
 		}
 
