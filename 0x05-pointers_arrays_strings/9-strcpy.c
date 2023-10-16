@@ -14,7 +14,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i = 0, length = _strlen(src);
 
-	while (i < length)
+	while (i <= length)
 	{
 		dest[i] = src[i];
 		i++;
