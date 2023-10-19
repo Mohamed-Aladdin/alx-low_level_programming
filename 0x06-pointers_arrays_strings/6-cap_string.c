@@ -16,7 +16,7 @@ char *cap_string(char *s)
 	{
 		int j = 0;
 
-		while (j < spr)
+		while (j < length)
 		{
 			if ((s[i] >= 97 && s[i] <= 122) && (i == 0 || s[i - 1] = spr[j]))
 				s[i] -= 32;
