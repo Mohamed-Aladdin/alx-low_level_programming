@@ -4,7 +4,6 @@
  * _strcmp - appends the src string to the dest string.
  * @s1: The first pointer.
  * @s2: The second pointer.
- * @n: The number.
  *
  * Return: a pointer to the resulting string dest.
  */
