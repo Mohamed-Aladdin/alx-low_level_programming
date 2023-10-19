@@ -23,7 +23,7 @@ char *rot13(char *s)
 			{
 				s[i] = y[j];
 				break;
-			{
+			}
 			j++;
 		}
 
