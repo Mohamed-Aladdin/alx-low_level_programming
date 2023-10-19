@@ -7,19 +7,20 @@
  * and then adds a terminating null byte.
  * @dest: The first pointer.
  * @src: The second pointer.
+ *
  * Return: a pointer to the resulting string dest.
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, j;
+	int i = 0;
 
 	while (dest[i] != '\0')
 	{
 		i++;
 	}
 
-	for (j = 0; src[j] != '\0'; j++)
+	for (int j = 0; src[j] != '\0'; j++)
 	{
 		dest[i+j] = src[j];
 	}
