@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * _strcmp - appends the src string to the dest string,
- * overwriting the terminating null byte (\0) at the end of dest,
- * and then adds a terminating null byte.
+ * _strcmp - appends the src string to the dest string.
  * @s1: The first pointer.
  * @s2: The second pointer.
  * @n: The number.
