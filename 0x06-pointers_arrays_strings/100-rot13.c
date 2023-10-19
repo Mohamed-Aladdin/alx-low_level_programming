@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * rot123 -  encodes a string using rot13.
+ * rot13 -  encodes a string using rot13.
  * @s: The given string.
  *
  * Return: a pointer to the resulting string s.
  */
 
-char *rot(char *s)
+char *rot13(char *s)
 {
 	int i = 0;
 	char x[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
