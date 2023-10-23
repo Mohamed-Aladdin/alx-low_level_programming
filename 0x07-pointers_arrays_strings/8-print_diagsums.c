@@ -12,28 +12,13 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, x, y;
+	int i, sum1, sum2;
 
 	for (i = 0; i < size; i++)
 	{
-		x += a[i][i];
+		sum1 += a[i + (size * i)];
+		sum2 += a[((size - 1) * i) + (size - 1)];
 	}
 
-	int k = 0;
-
-	while (k < size)
-	{
-		int c = 1;
-
-		for (j = size - c; j >= 0; j--)
-		{
-			y += a[k][j];
-			break;
-		}
-
-		k--;
-		c++;
-	}
-
-	printf("%d. %d\n", x, y);
+	printf("%d, %d\n", x, y);
 }
