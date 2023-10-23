@@ -30,7 +30,7 @@ void print_diagsums(int *a, int size)
 			y += a[k][j];
 			break;
 		}
-		
+
 		k--;
 		c++;
 	}
