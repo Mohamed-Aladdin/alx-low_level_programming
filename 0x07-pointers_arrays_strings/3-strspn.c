@@ -22,10 +22,11 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				sum += 1;
-				break;
 			}
 		}
 
+		if (s[j] == '\0')
+			return (sum);
 		i++;
 	}
 
