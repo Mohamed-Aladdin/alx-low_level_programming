@@ -12,7 +12,7 @@ int root_checker(int num, int sqrt_root)
 {
 	if (sqrt_root * sqrt_root == num)
 		return (sqrt_root);
-	else if(sqrt_root * sqrt_root > num)
+	else if (sqrt_root * sqrt_root > num)
 		return (-1);
 
 	return (root_checker(num, sqrt_root + 1));
