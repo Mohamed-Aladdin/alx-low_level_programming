@@ -10,7 +10,7 @@
 
 int prime_checker(int n, int num)
 {
-	if (n <= 1 || (num % n && n > 1))
+	if (n <= 1 || (num % n == 0 && n > 1))
 		return (0);
 	else if ((num / n) < n)
 		return (1);
