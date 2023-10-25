@@ -15,7 +15,7 @@ int root_checker(int num, int sqrt_root)
 	else if(sqrt_root * sqrt_root > num)
 		return (-1);
 
-	return (root-checker(num, sqrt_root + 1));
+	return (root_checker(num, sqrt_root + 1));
 }
 
 /**
@@ -31,7 +31,7 @@ int _sqrt_recursion(int n)
 
 	if (n < 0)
 		return (-1);
-	else if (y == 1)
+	else if (n == 1)
 		return (1);
 
 	return (root_checker(n, 1));
