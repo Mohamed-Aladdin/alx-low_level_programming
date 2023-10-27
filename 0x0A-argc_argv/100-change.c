@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	c = atoi(argv[1]);
 
-	if (c < 1)
+	if (c < 0)
 		printf("0\n");
 
 	while (c > 0)
