@@ -1,10 +1,13 @@
-#include <stdio.h>
+#include <unistd.h>
+
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * _putchar - prints the character c.
+ * @c: The character.
+ *
+ * Return: 1 if success, otherwise 0.
  */
-int main(void)
+
+int _putchar(char c)
 {
-	printf("_putchar\n");
-	return (0);
+	return (write(1, &c, 1));
 }
