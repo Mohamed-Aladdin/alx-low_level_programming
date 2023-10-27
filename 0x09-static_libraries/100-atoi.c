@@ -20,10 +20,10 @@ int _atoi(char *s)
 			sign *= -1;
 		if (s[j] >= '0' && s[j] <= '9')
 		{
-				isnum = 1;
-				value *= 10;
-				value += -(s[j] - '0');
-				continue;
+			isnum = 1;
+			value *= 10;
+			value += -(s[j] - '0');
+			continue;
 		}
 		else if (isnum)
 		{
@@ -31,5 +31,6 @@ int _atoi(char *s)
 			break;
 		}
 	}
+
 	return (value * sign);
 }
