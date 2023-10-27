@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strlen.c"
 
 /**
  * _strcpy - copies the string pointed to by src, including the
@@ -10,15 +9,4 @@
  * Return: The pointer to dest.
  */
 
-char *_strcpy(char *dest, char *src)
-{
-	int i = 0, length = _strlen(src);
-
-	while (i <= length)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-
-	return (dest);
-}
+char *_strcpy(char *dest, char *src);
