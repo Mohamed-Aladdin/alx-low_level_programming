@@ -16,12 +16,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int i, mul = 1;
-
-	for (i = 0; i < argc; i++)
-	{
-		mul *= i;
-		printf("%d\n", i);
-	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
