@@ -5,12 +5,13 @@
  * @argc: The number of arguments.
  * @argv: The array of arguments.
  *
- * Return: Always 0.
+ * Return: Always 0 or 1.
  */
 
 int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
+
 	if (argc < 2)
 	{
 		printf("0\n");

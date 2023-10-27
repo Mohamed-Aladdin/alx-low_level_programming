@@ -1,4 +1,4 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <inttypes.h>
+#include <ctype.h>
 int _putchar(char c);
