@@ -13,7 +13,7 @@ int w_count(char *str)
 
 	for (i = 0; str[i]; i++)
 	{
-		if (s[i] == ' ')
+		if (str[i] == ' ')
 		{
 			if (str[i + 1] != ' ' && str[i + 1] != '\0')
 				count++;
