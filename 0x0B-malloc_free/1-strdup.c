@@ -3,8 +3,7 @@
 /**
  * *_strdup - returns a pointer to a newly allocated space in memory,
  * which contains a copy of the string given as a parameter.
- * @size: The size.
- * @c: The character.
+ * @str: The string.
  *
  * Return: Char.
  */
@@ -14,7 +13,7 @@ char *_strdup(char *str)
 	int i, length;
 	char *dup;
 
-	if (size == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	length = _strlen(*str);
