@@ -1,5 +1,5 @@
 #include "main.h"
-#include "_strlen"
+#include "_strlen.c"
 /**
  * *str_concat - concatenates two strings.
  * @s1: The first string.
