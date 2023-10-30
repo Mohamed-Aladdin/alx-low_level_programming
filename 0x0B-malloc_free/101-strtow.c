@@ -37,7 +37,7 @@ int w_count(char *str)
 char **strtow(char *str)
 {
 	int i, j, k, x, y = 0, count;
-	char *s;
+	char **s;
 
 	if (*str == '\0' || str == NULL)
 		return (NULL);
@@ -52,7 +52,7 @@ char **strtow(char *str)
 	s[count - 1] = NULL;
 	for (i = 0; s[i]; i++)
 	{
-		if ((str[i - 1] == ' ' || i == 0) && s[i] != ' ')
+		if ((str[i - 1] == ' ' || i == 0) && str[i] != ' ')
 		{
 			j = 1;
 
