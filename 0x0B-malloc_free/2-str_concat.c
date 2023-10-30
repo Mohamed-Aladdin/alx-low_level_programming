@@ -10,7 +10,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j = 0, length = 0;
+	int i, j = 0, length;
 	char *full_str;
 
 	if (s1 == NULL)
@@ -18,9 +18,9 @@ char *str_concat(char *s1, char *s2)
 	else if (s2 == NULL)
 		s2 = "";
 
-	length += _strlen(s1) + _strlen(s2);
+	length = _strlen(s1) + _strlen(s2);
 
-	full_str = malloc(length * sizeof(char) + 1);
+	full_str = malloc((length + 1) * sizeof(char));
 
 	if (full_str == NULL)
 		return (NULL);
