@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	else if (s2 == NULL)
 		s2 = "";
 
-	length = _strlen(s1) + _strlen(s2);
+	length = _strlen(s1) + _strlen(s2) + 1;
 
 	full_str = malloc(length * sizeof(char));
 
