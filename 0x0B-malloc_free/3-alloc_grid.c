@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_strlen.c"
 /**
  * **alloc_grid - returns a pointer to
  * a 2 dimensional array of integers.
