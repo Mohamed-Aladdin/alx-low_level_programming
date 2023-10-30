@@ -49,7 +49,7 @@ char **strtow(char *str)
 	if (s == NULL)
 		return (NULL);
 	s[count - 1] = NULL;
-	while (s[i])
+	while (str[i])
 	{
 		if ((str[i - 1] == ' ' || i == 0) && str[i] != ' ')
 		{
@@ -68,7 +68,6 @@ char **strtow(char *str)
 			}
 			for (k = 0; k < j; k++)
 				s[y][k] = str[i + k];
-			s[y][k] = '\0';
 			y++;
 			i += j;
 		}
