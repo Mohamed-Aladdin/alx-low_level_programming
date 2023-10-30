@@ -41,7 +41,6 @@ char **strtow(char *str)
 
 	if (*str == '\0' || str == NULL)
 		return (NULL);
-
 	count = w_count(str);
 
 	if (count == 1)
@@ -69,6 +68,7 @@ char **strtow(char *str)
 			}
 			for (k = 0; k < j; k++)
 				s[y][k] = str[i + k];
+			s[y][k] = '\0';
 			y++;
 			i += j;
 		}
