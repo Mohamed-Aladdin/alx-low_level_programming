@@ -29,27 +29,20 @@ void _puts(char *str)
 
 int _atoi(char *s)
 {
-	int digit = 0, i, num = 0, sign = 1;
+	int sign = 1;
+	unsigned long int result = 0, i, j;
 
-	for (i = 0; s[i]; i++)
-	{
+	for (i = 0; !(s[i] >= 48 && s[i] <= 57); i++)
 		if (s[i] == '-')
 			sign *= -1;
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			num = 1;
-			digit *= 10;
-			digit += -(s[i] - '0');
-			continue;
-		}
-		else if (num)
-		{
-			i++;
-			break;
-		}
+
+	for (j = i; s[j] >= 48 && s[j] <= 57; j++)
+	{
+		result *= 10;
+		result += (s[j] - 48);
 	}
 
-	return (digit * sign);
+	return (sign * result);
 }
 
 /**
@@ -82,6 +75,8 @@ void print_int(unsigned long int n)
 
 int main(int argc, char *argv[])
 {
+	void(argc);
+
 	if (argc != 3 || !_atoi(argv[1]) || !_atoi(argv[2]))
 	{
 		_puts("Error\n");
