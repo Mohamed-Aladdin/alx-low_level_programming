@@ -82,8 +82,6 @@ void print_int(unsigned long int n)
 
 int main(int argc, char *argv[])
 {
-	(void)argc;
-
 	if (argc != 3 || !_atoi(argv[1]) || !_atoi(argv[2]))
 	{
 		_puts("Error\n");
