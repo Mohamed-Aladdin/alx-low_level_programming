@@ -1,6 +1,7 @@
 #ifndef _DOG_
 #define _DOG_
 
+#include <std.io>
 /**
  * struct dog - a new type.
  * @name: The name of the dog.
