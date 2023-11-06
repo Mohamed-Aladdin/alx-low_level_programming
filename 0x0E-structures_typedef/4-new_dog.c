@@ -1,5 +1,5 @@
 #include "dog.h"
-#include "1-strdup.c"
+#include "_strdup.c"
 
 /**
  * *new_dog - creates a new dog.
