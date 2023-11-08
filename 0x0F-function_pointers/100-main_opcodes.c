@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	for (i = 0; i < (atoi(argv[1]) - 1); ptr++)
+	for (i = 0; i < (atoi(argv[1]) - 1); i++, ptr++)
 		printf("%02x ", *ptr);
 
 	printf("%02x\n", *ptr);
