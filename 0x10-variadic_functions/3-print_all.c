@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					printf("%c", va_arg(list, char));
+					printf("%c", va_arg(list, int));
 					break;
 				case 'i':
 					printf("%d", va_arg(list, int));
@@ -32,10 +32,13 @@ void print_all(const char * const format, ...)
 					printf("%f", va_arg(list, double));
 					break;
 				case 's':
-					printf("%s", va_arg(list, char *));
+					str = va_arg(list, char *);
+					if (!str)
+						str = "(nil)";
+					printf("%s", str);
 					break;
 				default:
-					swticher = 0;
+					switcher = 0;
 					break;
 			}
 			if (format[i + 1] && switcher)
