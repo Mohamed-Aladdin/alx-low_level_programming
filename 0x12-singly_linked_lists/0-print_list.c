@@ -12,12 +12,15 @@ size_t print_list(const list_t *h)
 	const list_t *current = h;
 	size_t nodes_len = 0;
 
-		if (!h->str)
-			printf("[0] (nil)\n");
-		else
-			printf("[%u] %s\n", h->len, h->str);
+	if (h == Null)
+		return (0);
 
-		nodes_len += print_list(current->next);
+	if (!h->str)
+		printf("[0] (nil)\n");
+	else
+		printf("[%u] %s\n", h->len, h->str);
 
-		return (nodes_len);
+	nodes_len += print_list(current->next);
+
+	return (nodes_len);
 }
