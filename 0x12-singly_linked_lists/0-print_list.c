@@ -10,9 +10,9 @@
 size_t print_list(const list_t *h)
 {
 	const list_t *current = h;
-	size_t nodes_len = 0;
+	size_t nodes_len = 1;
 
-	if (h == Null)
+	if (h == NULL)
 		return (0);
 
 	if (!h->str)
