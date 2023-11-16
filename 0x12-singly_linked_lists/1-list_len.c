@@ -10,7 +10,12 @@
 size_t list_len(const list_t *h)
 {
 	const list_t *current = h;
-	int nodes_len = 0;
+	size_t nodes_len = 1;
+
+	if (h == NULL)
+		return (0);
 
 	nodes_len += list_len(current->next);
+
+	return (nodes_len);
 }
