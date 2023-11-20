@@ -22,7 +22,7 @@ size_t free_listint_safe(listint_t **h)
 		if (*h > (*h)->next)
 		{
 			temp = *h;
-			*h = *(h)->next;
+			*h = (*h)->next;
 			free(temp);
 		}
 		else
