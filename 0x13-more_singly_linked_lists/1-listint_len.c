@@ -7,7 +7,7 @@
  * Return: The number of nodes.
  */
 
-size_t listint_len(const list_t *h)
+size_t listint_len(const listint_t *h)
 {
 	const listint_t *current = h;
 	size_t nodes_len = 1;
@@ -15,7 +15,7 @@ size_t listint_len(const list_t *h)
 	if (h == NULL)
 		return (0);
 
-	nodes_len += list_len(current->next);
+	nodes_len += listint_len(current->next);
 
 	return (nodes_len);
 }
