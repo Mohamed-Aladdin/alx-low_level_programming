@@ -12,7 +12,7 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *temp = NULL;
 	size_t nodes_len = 0;
 
-	if (h == NULL)
+	if (*h == NULL)
 		return (nodes_len);
 
 	while (*h)
