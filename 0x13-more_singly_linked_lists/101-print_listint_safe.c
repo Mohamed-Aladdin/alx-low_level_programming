@@ -13,7 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t nodes_len = 0;
 
 	if (head == NULL)
-		exit(98);
+		exit (98);
 
 	while (head)
 	{
