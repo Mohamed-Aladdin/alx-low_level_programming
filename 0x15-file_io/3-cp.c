@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_error - prints error and exit with the corresponding value.
  * @msg: The string.
@@ -47,7 +49,7 @@ int main(int argc, char **argv)
 
 		if (wr < 0 || wr != rd)
 			print_error(argv[2], "Error: Can't write to ", 99);
-	} while (wr == 1024)
+	} while (wr == 1024);
 
 	if (close(opsrc))
 	{
