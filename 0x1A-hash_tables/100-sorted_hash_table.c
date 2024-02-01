@@ -195,7 +195,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 }
 
 /**
- * hash_table_delete - deletes a hash table.
+ * shash_table_delete - deletes a hash table.
  * @ht: The given hash table.
  *
  * Return: Void.
