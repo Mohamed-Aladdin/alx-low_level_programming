@@ -10,7 +10,7 @@ def island_perimeter(grid):
     for j, row in enumerate(grid):
         for i, cell in enumerate(row):
             if cell == 1:
-                if j == 0 or grid[y - 1][i] == 0:
+                if j == 0 or grid[j - 1][i] == 0:
                     perim += 1
                 if j == len(grid) - 1 or grid[j + 1][i] == 0:
                     perim += 1
