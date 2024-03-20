@@ -5,17 +5,17 @@
 def island_perimeter(grid):
     """Function to calculate the perimeter of the island grid"""
 
-    answer = 0
+    perim = 0
 
-    for y, row in enumerate(grid):
-        for x, cell in enumerate(row):
+    for j, row in enumerate(grid):
+        for i, cell in enumerate(row):
             if cell == 1:
-                if y == 0 or grid[y - 1][x] == 0:
-                    answer += 1
-                if y == len(grid) - 1 or grid[y + 1][x] == 0:
-                    answer += 1
-                if x == 0 or grid[y][x - 1] == 0:
-                    answer += 1
-                if x == len(row) - 1 or grid[y][x + 1] == 0:
-                    answer += 1
-    return answer
+                if j == 0 or grid[y - 1][i] == 0:
+                    perim += 1
+                if j == len(grid) - 1 or grid[j + 1][i] == 0:
+                    perim += 1
+                if i == 0 or grid[j][i - 1] == 0:
+                    perim += 1
+                if i == len(row) - 1 or grid[j][i + 1] == 0:
+                    perim += 1
+    return perim
