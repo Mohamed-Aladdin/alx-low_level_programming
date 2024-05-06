@@ -56,9 +56,9 @@ int binary_helper(int *array, int value, size_t low, size_t high)
 	if (array[mid] == value)
 		return (mid);
 	if (array[mid] > value)
-		return (re_binary(array, value, low, mid - 1));
+		return (binary_helper(array, value, low, mid - 1));
 	if (array[mid] < value)
-		return (re_binary(array, value, mid + 1, high));
+		return (binary_helper(array, value, mid + 1, high));
 	return (-1);
 }
 

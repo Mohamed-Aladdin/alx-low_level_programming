@@ -43,14 +43,14 @@ int adv_bhelper(int *array, int value, size_t low, size_t high)
 	if (array[mid] == value)
 	{
 		if (array[mid - 1] == value)
-			return (do_binary(array, value, low, mid));
+			return (adv_bhelper(array, value, low, mid));
 		else
 			return (mid);
 	}
 	if (array[mid] < value)
-		return (do_binary(array, value, mid + 1, high));
+		return (adv_bhelper(array, value, mid + 1, high));
 	if (array[mid] > value)
-		return (do_binary(array, value, low, mid));
+		return (adv_bhelper(array, value, low, mid));
 	return (-1);
 }
 
