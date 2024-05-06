@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * advanced_search - searches for a value in a sorted array
+ * advanced_binary - searches for a value in a sorted array
  * of integers using the Advanced search algorithm.
  * @array: The pointer to the first element of the array.
  * @size: The number of elements in array.
@@ -10,7 +10,7 @@
  * Return: Int.
  */
 
-int advanced_search(int *array, size_t size, int value)
+int advanced_binary(int *array, size_t size, int value)
 {
 	if (!array)
 		return (-1);
